@@ -1,11 +1,13 @@
+/* universal selectors */
 * {
   box-sizing: border-box;
 }
-
+/* CSS selector */
 :root {
   --gfont: 'Noto Sans JP', sans-serif;
 }
 
+/* header settings */
 .header {
     font-weight: bold;
     font-size: 2em;
@@ -67,7 +69,7 @@
     justify-content: center;
     align-items: center;
 }
-/* About me section (aside) */
+/* Bio */
 #container {
     display: flex;
     flex-direction: column;
@@ -76,7 +78,7 @@
     font-size: 2em;
 }
 
-/* About Me flex container */
+/* Bio flex container */
 #aboutmeheader {
     display: flex;
     height: 100%;
@@ -86,11 +88,12 @@
     font-family: fantasy;
 
 }
-
+/* Bio content */
 #aboutmecontent {
   font-family: var(--gfont);
+  padding-bottom: 10%;
 }
-
+/* portfolio flex container */
 .portfolio {
   display: flex;
   justify-content: center;
@@ -100,24 +103,25 @@
   font-family: var(--gfont);
   flex-wrap: wrap;
 }
-
+/* portfolio title */
 #porttitle {
   font-size: 1.75em;
   font-family: fantasy;
   padding-right: 2em;
   margin-top: 2em;
 }
-
-#webite {
-  margin-top: 2em;
-  padding-top: 2em;
+/* portfolio pictures formatting */
+#website {
+  margin-top: 1%;
+  padding-top: 1%;
+  margin-bottom: 2%;
 }
-
+/* contact header and info wrapper */
 .contactwrapper {
   display: flex;
   justify-content: flex-end;
 }
-
+/* contact header formatting */
 .contactheader {
   font-size: 2em;
   background-color: lightsteelblue;
@@ -125,7 +129,7 @@
   font-family: fantasy;
 
 }
-
+/* contact info formatting */
 #contactinfo {
   display: flex;
   justify-content: flex-end;
@@ -136,7 +140,20 @@
   align-content: flex-end;
   font-family: var(--gfont);
 }
-
+/* contact info link activity */
+  #contactinfo a:hover {
+    background-color: lightblue;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.2em;
+  }
+  
+  #contactinfo a.active {
+    background-color: red;
+    color: white;
+  }
+/* picture (website) formatting */
 #pic2 {
   padding-right: 2em;
   height: 140px;
@@ -150,7 +167,7 @@
 .sfont {
   font-size: 0.5em;
 }
-
+/* footer formatting */
 footer {
   text-align: center;
   background-color: lightblue;
