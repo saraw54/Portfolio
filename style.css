@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --gfont: 'Noto Sans JP', sans-serif;
+}
+
 .header {
     font-weight: bold;
     font-size: 2em;
@@ -83,13 +87,17 @@
 
 }
 
+#aboutmecontent {
+  font-family: var(--gfont);
+}
+
 .portfolio {
   display: flex;
   justify-content: center;
   background-color: lightskyblue;
   flex-direction: row;
   font-size: 1.5em;
-  font-family: cursive;
+  font-family: var(--gfont);
   flex-wrap: wrap;
 }
 
@@ -97,6 +105,12 @@
   font-size: 1.75em;
   font-family: fantasy;
   padding-right: 2em;
+  margin-top: 2em;
+}
+
+#webite {
+  margin-top: 2em;
+  padding-top: 2em;
 }
 
 .contactwrapper {
@@ -105,11 +119,10 @@
 }
 
 .contactheader {
-  /* display: flex;
-  justify-content: flex-end; */
   font-size: 2em;
   background-color: lightsteelblue;
   padding-right: 2em;
+  font-family: fantasy;
 
 }
 
@@ -121,21 +134,27 @@
   flex-wrap: nowrap;
   flex-direction: column;
   align-content: flex-end;
+  font-family: var(--gfont);
 }
 
 #pic2 {
   padding-right: 2em;
-  height: 35%;
+  height: 140px;
+  width: 150px;
 }
 
 .otherpics {
   display: flex;
   padding-top: 2em;
 }
+.sfont {
+  font-size: 0.5em;
+}
 
 footer {
   text-align: center;
   background-color: lightblue;
+  font-family: var(--gfont);
 }
 
 /* media screen settings */
