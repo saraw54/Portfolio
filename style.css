@@ -1,5 +1,5 @@
-body {
-    background-image: "https://www.pexels.com/photo/blue-skies-53594/";
+* {
+  box-sizing: border-box;
 }
 
 .header {
@@ -19,7 +19,7 @@ body {
   /* Style the links inside the navigation bar */
   .nav {
     float: right;
-    font-size: 2em;
+    font-size: 1.7em;
    
   }
 
@@ -63,7 +63,106 @@ body {
     justify-content: center;
     align-items: center;
 }
-/* nav jump links */
-#bio, #portfolio, #contact, #about {
+/* About me section (aside) */
+#container {
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    margin: 0; 
+    font-size: 2em;
+}
 
+/* About Me flex container */
+#aboutmeheader {
+    display: flex;
+    height: 100%;
+    width: 20%;
+    flex-direction: column;
+    font-size: 1.5em;
+    font-family: fantasy;
+
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  background-color: lightskyblue;
+  flex-direction: row;
+  font-size: 1.5em;
+  font-family: cursive;
+  flex-wrap: wrap;
+}
+
+#porttitle {
+  font-size: 1.75em;
+  font-family: fantasy;
+  padding-right: 2em;
+}
+
+.contactwrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contactheader {
+  /* display: flex;
+  justify-content: flex-end; */
+  font-size: 2em;
+  background-color: lightsteelblue;
+  padding-right: 2em;
+
+}
+
+#contactinfo {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.25em;
+  background-color: lightsteelblue;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+#pic2 {
+  padding-right: 2em;
+  height: 35%;
+}
+
+.otherpics {
+  display: flex;
+  padding-top: 2em;
+}
+
+footer {
+  text-align: center;
+  background-color: lightblue;
+}
+
+/* media screen settings */
+@media screen and (max-width: 968px) {
+   .nav {
+       display: flex;
+       flex-direction: column;
+   }
+
+   .topLine {
+       display: flex;
+       flex-direction: column;
+       font-size: 1.7em;
+    ;
+   }
+
+   body {
+       background-color: gray;
+   }
+
+   img {
+       height: 50%;
+       width: 50%;
+   }
+
+   .container {
+       display: flex;
+       flex-direction: column;
+   }
 }
