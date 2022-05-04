@@ -5,6 +5,7 @@
 /* CSS selector */
 :root {
   --gfont: 'Noto Sans JP', sans-serif;
+  --hmarginsize: 1em
 }
 
 /* header settings */
@@ -69,6 +70,12 @@
     justify-content: center;
     align-items: center;
 }
+/* super ultra container for bio and portfolio */
+.supercontainer {
+  display: flex;
+  margin-left: var(--hmarginsize);
+  margin-right: var(--hmarginsize);
+}
 /* Bio */
 #container {
     display: flex;
@@ -81,17 +88,18 @@
 /* Bio flex container */
 #aboutmeheader {
     display: flex;
-    height: 100%;
-    width: 20%;
+    max-height: fit-content;
     flex-direction: column;
     font-size: 1.5em;
     font-family: fantasy;
+    padding-right: 10%;
 
 }
 /* Bio content */
 #aboutmecontent {
   font-family: var(--gfont);
-  padding-bottom: 10%;
+  max-width: 400px;
+  padding-right: 10%;
 }
 /* portfolio flex container */
 .portfolio {
@@ -102,6 +110,8 @@
   font-size: 1.5em;
   font-family: var(--gfont);
   flex-wrap: wrap;
+  flex-grow: 1;
+  padding: 10%;
 }
 /* portfolio title */
 #porttitle {
@@ -120,6 +130,8 @@
 .contactwrapper {
   display: flex;
   justify-content: flex-end;
+  margin-left: var(--hmarginsize);
+  margin-right: var(--hmarginsize);
 }
 /* contact header formatting */
 .contactheader {
@@ -131,14 +143,11 @@
 }
 /* contact info formatting */
 #contactinfo {
-  display: flex;
-  justify-content: flex-end;
   font-size: 1.25em;
   background-color: lightsteelblue;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  align-content: flex-end;
   font-family: var(--gfont);
+  margin-right: auto;
+  flex-grow: 1;
 }
 /* contact info link activity */
   #contactinfo a:hover {
@@ -153,7 +162,7 @@
     background-color: red;
     color: white;
   }
-/* picture (website) formatting */
+/* picture (websites) formatting */
 #pic2 {
   padding-right: 2em;
   height: 140px;
@@ -172,6 +181,8 @@ footer {
   text-align: center;
   background-color: lightblue;
   font-family: var(--gfont);
+  margin-left: var(--hmarginsize);
+  margin-right: var(--hmarginsize);  
 }
 
 /* media screen settings */
@@ -179,6 +190,7 @@ footer {
    .nav {
        display: flex;
        flex-direction: column;
+      
    }
 
    .topLine {
@@ -201,4 +213,8 @@ footer {
        display: flex;
        flex-direction: column;
    }
-}
+   #selfie {
+     height: 60%;
+     width: 60%;
+   }
+  }
