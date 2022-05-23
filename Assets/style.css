@@ -5,70 +5,68 @@
 /* CSS selector */
 :root {
   --gfont: 'Noto Sans JP', sans-serif;
-  --hmarginsize: 1em
+  --hmarginsize: 1em;
 }
 
 /* header settings */
 .header {
-    font-weight: bold;
-    font-size: 2em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+  font-weight: bold;
+  font-size: 2em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
 }
-
 
 /* Add a background color to the top navigation and hide bullets */
 .nav {
-    background-color: white;
-    overflow: hidden;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .nav {
-    float: right;
-    font-size: 1.7em;
-   
-  }
+  background-color: white;
+  overflow: hidden;
+}
 
-  .nav a {
-    color: blue;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 1em;
-  }
-  
-  /* Change the color of links on hover */
-  .nav a:hover {
-    background-color: blue;
-    color: white;
-  }
-  
-  /* Add a color to the active/current link */
-  .nav a.active {
-    background-color: lightblue;
-    color: white;
-  }
+/* Style the links inside the navigation bar */
+.nav {
+  float: right;
+  font-size: 1.7em;
+}
+
+.nav a {
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 1em;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+  background-color: blue;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.nav a.active {
+  background-color: lightblue;
+  color: white;
+}
 /* self image formatting */
 #selfie {
-    display: flex;
-    height: 12%;
-    width: 18%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    border-radius: 50%;
-    
+  display: flex;
+  height: 12%;
+  width: 18%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 50%;
 }
 
 /* image and header formatting */
 .topLine {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    gap: 200px;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  gap: 200px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
 }
 /* super ultra container for bio and portfolio */
 .supercontainer {
@@ -78,22 +76,21 @@
 }
 /* Bio */
 #container {
-    display: flex;
-    flex-direction: column;
-    background-color: lightblue;
-    margin: 0; 
-    font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  margin: 0;
+  font-size: 2em;
 }
 
 /* Bio flex container */
 #aboutmeheader {
-    display: flex;
-    max-height: fit-content;
-    flex-direction: column;
-    font-size: 1.5em;
-    font-family: fantasy;
-    padding-right: 10%;
-
+  display: flex;
+  max-height: fit-content;
+  flex-direction: column;
+  font-size: 1.5em;
+  font-family: fantasy;
+  padding-right: 10%;
 }
 /* Bio content */
 #aboutmecontent {
@@ -139,7 +136,6 @@
   background-color: lightsteelblue;
   padding-right: 2em;
   font-family: fantasy;
-
 }
 /* contact info formatting */
 #contactinfo {
@@ -150,18 +146,18 @@
   flex-grow: 1;
 }
 /* contact info link activity */
-  #contactinfo a:hover {
-    background-color: lightblue;
-    color: black;
-    font-weight: bolder;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.2em;
-  }
-  
-  #contactinfo a.active {
-    background-color: red;
-    color: white;
-  }
+#contactinfo a:hover {
+  background-color: lightblue;
+  color: black;
+  font-weight: bolder;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 1.2em;
+}
+
+#contactinfo a.active {
+  background-color: red;
+  color: white;
+}
 /* picture (websites) formatting */
 #pic2 {
   padding-right: 2em;
@@ -182,39 +178,37 @@ footer {
   background-color: lightblue;
   font-family: var(--gfont);
   margin-left: var(--hmarginsize);
-  margin-right: var(--hmarginsize);  
+  margin-right: var(--hmarginsize);
 }
 
 /* media screen settings */
 @media screen and (max-width: 968px) {
-   .nav {
-       display: flex;
-       flex-direction: column;
-      
-   }
-
-   .topLine {
-       display: flex;
-       flex-direction: column;
-       font-size: 1.7em;
-    ;
-   }
-
-   body {
-       background-color: gray;
-   }
-
-   img {
-       height: 50%;
-       width: 50%;
-   }
-
-   .container {
-       display: flex;
-       flex-direction: column;
-   }
-   #selfie {
-     height: 60%;
-     width: 60%;
-   }
+  .nav {
+    display: flex;
+    flex-direction: column;
   }
+
+  .topLine {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.7em;
+  }
+
+  body {
+    background-color: gray;
+  }
+
+  img {
+    height: 50%;
+    width: 50%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  #selfie {
+    height: 60%;
+    width: 60%;
+  }
+}
