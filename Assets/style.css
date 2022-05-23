@@ -159,6 +159,10 @@
   color: white;
 }
 /* picture (websites) formatting */
+.imageToOverlay {
+  padding-top: 2em;
+}
+
 #pic2 {
   padding-right: 2em;
   height: 140px;
